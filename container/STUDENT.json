@@ -1,0 +1,21 @@
+{
+  "first_name": "Aysu",
+  "last_name": "Mammadova",
+  "team": "aysu-mammadova",
+  "model": {
+    "framework": "yolo26",
+    "variant": "yolo26m",
+    "imgsz": 640,
+    "epochs_total": 70,
+    "tricks": [
+      "mosaic",
+      "mixup",
+      "cos_lr",
+      "two_stage_finetune",
+      "distractor_aware_training",
+      "dataset_cleaning",
+      "onnx_slim"
+    ]
+  },
+  "notes": "Distractor-aware training (dog/cheetah) + 36 dataset anomalies cleaned. Zero-torch ~250MB ONNX container."
+}
